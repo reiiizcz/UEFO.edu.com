@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad Educativa Francisco de Orellana</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top bar institucional -->
+    <div class="top-bar">
+        <span><i class="fa-solid fa-envelope"></i> info@uefranciscodeorellana.edu.ec</span>
+        <span><i class="fa-solid fa-location-dot"></i> El Coca, Orellana - Ecuador</span>
+    </div>
+
+    <!-- Encabezado Principal -->
+    <header class="header">
+        <div class="navbar">
+            <!-- Logo y Nombre Institucional -->
+            <div class="brand">
+                <div class="brand-mark">
+                    <img src="img/logouefo.png" alt="Logo de la Unidad Educativa Francisco de Orellana" hidden>
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>Francisco de Orellana</h1>
+                    <span class="subtitle">Excelencia Educativa</span>
+                </div>
+            </div>
+
+            <!-- Menú de Navegación -->
+            <nav class="primary-nav" aria-label="Navegación principal">
+                <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li class="dropdown">
+                        <a href="#oferta" class="dropbtn">Oferta Académica <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+                        <button class="dropdown-toggle" type="button" aria-label="Mostrar opciones de Oferta Académica" aria-expanded="false">
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#ciencias">BGU en Ciencias</a>
+                            <a href="#informatica">Técnico en Informática</a>
+                        </div>
+                    </li>
+                    <li><a href="#admisiones">Admisiones</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botón de Acción Rápida -->
+            <div class="nav-action">
+                <a href="https://orellana.edumax.ec/inicio/" class="btn-matricula" target="_blank" rel="noopener noreferrer">Matricúlate</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Principal / Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">EXCELENCIA EDUCATIVA</span>
+            <h1>Unidad Educativa<br><span>Francisco de Orellana</span></h1>
+            <p>Formación integral con identidad amazónica, científica y tecnológica.</p>
+            <div class="hero-btns">
+                <a href="#admisiones" class="btn btn-primary">Proceso de Admisión</a>
+                <a href="#oferta" class="btn btn-secondary">Ver Especialidades</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="section">
+        <h2 class="section-title">Nuestra Institución</h2>
+        <div class="grid grid-3">
+            <div class="card">
+                <i class="fa-solid fa-compass card-icon"></i>
+                <h3>Misión</h3>
+                <p>Ofrecer una formación integral que potencie las habilidades científicas y tecnológicas con responsabilidad socio-ambiental en la región Amazónica.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-eye card-icon"></i>
+                <h3>Visión</h3>
+                <p>Ser la institución referente en el cantón Orellana por su innovación técnica, investigación científica y compromiso con el desarrollo de la comunidad.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-leaf card-icon"></i>
+                <h3>Ideario</h3>
+                <p>Respeto a la diversidad cultural, conservación del entorno amazónico, ética académica y excelencia constante.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta Académica -->
+    <section id="oferta" class="section bg-light">
+        <h2 class="section-title">Oferta Académica</h2>
+        
+        <div id="ciencias" class="offer-box">
+            <h3><i class="fa-solid fa-flask"></i> Bachillerato General Unificado - Ciencias</h3>
+            <p><strong>Perfil del Egresado:</strong> Estudiantes preparados para el razonamiento científico, análisis crítico e investigación experimental.</p>
+            <ul>
+                <li><strong>Malla Curricular:</strong> Enfoque profundo en Matemáticas avanzadas, Ciencias Experimentales y Redacción Técnica.</li>
+                <li><strong>Continuidad:</strong> Articulación directa con carreras universitarias de Salud, Ingenierías y Ciencias Naturales.</li>
+            </ul>
+        </div>
+
+        <div id="informatica" class="offer-box">
+            <h3><i class="fa-solid fa-laptop-code"></i> Bachillerato Técnico en Informática</h3>
+            <p><strong>Perfil Profesional:</strong> Desarrollo de software, ensamble/mantenimiento de equipos, administración de redes y soporte técnico.</p>
+            <ul>
+                <li><strong>Malla Curricular Técnica:</strong> Programación, Sistemas Operativos, Bases de Datos y Redes de Área Local.</li>
+                <li><strong>Laboratorios:</strong> Talleres equipados con hardware actualizado y entornos de desarrollo.</li>
+                <li><strong>Prácticas Pre-profesionales:</strong> Vinculación con empresas e instituciones locales de Orellana.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Admisiones -->
+    <section id="admisiones" class="section">
+        <h2 class="section-title">Proceso de Matriculación</h2>
+        <div class="grid grid-2">
+            <div>
+                <h3>Requisitos de Ingreso</h3>
+                <ul class="styled-list">
+                    <li><i class="fa-solid fa-check text-green"></i> Cédula de ciudadanía del estudiante y representante.</li>
+                    <li><i class="fa-solid fa-check text-green"></i> Certificado de promoción de años anteriores.</li>
+                    <li><i class="fa-solid fa-check text-green"></i> Planilla de servicio básico de la vivienda.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Pasos de Inscripción</h3>
+                <ol class="styled-list">
+                    <li>Verificar asignación en el portal del Ministerio de Educación.</li>
+                    <li>Completar la ficha de registro interno.</li>
+                    <li>Entregar la carpeta de documentos en Secretaría.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="admissions-action">
+            <a href="https://orellana.edumax.ec/inicio/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                Matricúlate en línea <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Noticias -->
+    <section id="noticias" class="section bg-light">
+        <h2 class="section-title">Noticias & Comunicados</h2>
+        <div class="grid grid-3">
+            <article class="card">
+                <h4>Feria de Ciencia y Tecnología 2026</h4>
+                <p class="date">05 de Noviembre, 2026</p>
+                <p>Estudiantes de la especialidad de Informática y Ciencias presentaron proyectos innovadores enfocados en el entorno amazónico.</p>
+            </article>
+            <article class="card">
+                <h4>Mantenimiento de Laboratorios</h4>
+                <p class="date">28 de Octubre, 2026</p>
+                <p>Se realizó la actualización de componentes y licencias de software en los laboratorios de computación de la institución.</p>
+            </article>
+            <article class="card">
+                <h4>Campeonato Deportivo Intercolegial</h4>
+                <p class="date">15 de Octubre, 2026</p>
+                <p>Nuestra delegación participó con éxito en las disciplinas de fútbol y atletismo a nivel provincial.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+        <h2 class="section-title">Contacto Institucional</h2>
+        <div class="grid grid-2">
+            <div>
+                <div class="contact-card">
+                    <p><strong><i class="fa-solid fa-envelope"></i> Principal:</strong> info@uefranciscodeorellana.edu.ec</p>
+                    <p><strong><i class="fa-solid fa-envelope"></i> Secretaría:</strong> secretaria@uefranciscodeorellana.edu.ec</p>
+                    <p><strong><i class="fa-solid fa-phone"></i> Teléfono:</strong> (06) 288-0000</p>
+                    <p><strong><i class="fa-solid fa-location-pin"></i> Ubicación:</strong> El Coca, Provincia de Orellana, Ecuador.</p>
+                </div>
+                
+                <div class="map-placeholder">
+                    <iframe src="https://maps.google.com/maps?q=Puerto%20Francisco%20de%20Orellana&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <form class="form">
+                <input type="text" placeholder="Nombre del Representante / Estudiante" required>
+                <input type="email" placeholder="Correo Electrónico de Contacto" required>
+                <textarea rows="4" placeholder="Escribe tu mensaje o consulta..." required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Unidad Educativa Francisco de Orellana - Todos los derechos reservados.</p>
+        <p><small>Alineado a las normativas del Ministerio de Educación de Ecuador.</small></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
